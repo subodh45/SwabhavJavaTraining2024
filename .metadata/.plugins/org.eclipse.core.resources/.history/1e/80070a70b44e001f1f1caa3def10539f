@@ -1,0 +1,17 @@
+package com.aurionpro.guitar.model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Inventory {
+	
+	List<Guitar> guitar = new ArrayList<Guitar>();
+	
+	
+	
+	public void addGuitar(String serialNumber ,double price,String builder,String model,String type, String  backWood,String topWood)
+	{
+		guitar.add(new Guitar(serialNumber ,price,builder,model,type,backWood,topWood));
+	}
+
+}

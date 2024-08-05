@@ -1,0 +1,16 @@
+package com.aurionpro.structural.Facade.model2;
+
+public class SoundSystem {
+
+	public  boolean start()
+	{
+		return true;
+	}
+	
+	public boolean stop()
+	{
+		return false;
+	}
+	
+	
+}

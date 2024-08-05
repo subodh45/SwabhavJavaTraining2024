@@ -1,0 +1,5 @@
+package com.aurionpro.behaviour.observer.model;
+
+public class WssupNotifier {
+
+}

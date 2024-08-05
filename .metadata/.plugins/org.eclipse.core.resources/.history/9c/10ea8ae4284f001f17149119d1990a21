@@ -1,0 +1,6 @@
+package com.aurionpro.creational.factory.model;
+
+public interface ICarFactory {
+
+	void makeCar();
+}

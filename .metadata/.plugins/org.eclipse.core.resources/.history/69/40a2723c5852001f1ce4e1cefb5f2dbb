@@ -1,0 +1,11 @@
+package com.aurionpro.game.test;
+
+import com.aurionpro.game.model.GameFacade;
+import com.aurionpro.game.model.Marker;
+
+public class GameFacadeTesting {
+public static void main(String[] args) {
+	
+	GameFacade remote= new GameFacade();
+}
+}

@@ -1,0 +1,44 @@
+package com.aurionpro.guitar.test;
+import java.util.List;
+import java.util.ArrayList;
+
+import com.aurionpro.guitar.model.*;
+
+public class GuitarTester {
+public static void main(String[] args) {
+	
+
+  
+  List<Guitar> guitars = new ArrayList<Guitar>();
+  
+  Inventory inventory = new Inventory();
+  
+  initializeInventory(inventory);
+  
+  Guitar WhatErinLikes = new Guitar("2" ,6000,Builder.FENDER,"stratocastor",Type.ELECTRIC, Wood.ALDER, Wood.ALDER);
+  
+  Guitar resguitar = inventory.search(WhatErinLikes);  
+  
+  if(resguitar != null)
+  {
+	  System.out.println("Erin , you might like "+
+            resguitar.getBuilder() +" "+ resguitar.getModel()
+            +" "+ resguitar.getType() +" Guitar:\n" +
+            " "+ resguitar.getBackWood() +" back and side ,\n "+
+             resguitar.getTopWood() + " price is only "+
+            resguitar.getPrice()
+	      );
+	  
+  }
+  else
+  {
+	  System.out.println("Sorry Erin , we have nothing for you");
+  }
+}
+
+private static void initializeInventory(Inventory inventory) {
+	// TODO Auto-generated method stub
+	// inventory.addGuitar("1" ,5500,"Builder","model","type", "backwood", "topWood");
+	 inventory.addGuitar("2" ,6000,Builder.FENDER,"stratocastor",Type.ELECTRIC, Wood.ALDER, Wood.ALDER);
+}
+}

@@ -1,0 +1,27 @@
+package com.aurionpro.game.model;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+class BoardTest {
+
+	@BeforeEach
+	void setUp() throws Exception {
+		Marker game[][] = { { Marker._, Marker._, Marker._ }, { Marker._, Marker._, Marker._ },
+				{ Marker._, Marker._, Marker._ } };
+		Board board = new Board(game);
+	}
+
+	
+	void testDisplay() {
+	
+	}
+
+	@Test
+	void testCheckWin() {
+		assertTrue(board[0][0] == Marker.O && board[0][1] == Marker.O && board[0][2] == Marker.O, "got it");
+	}
+
+}

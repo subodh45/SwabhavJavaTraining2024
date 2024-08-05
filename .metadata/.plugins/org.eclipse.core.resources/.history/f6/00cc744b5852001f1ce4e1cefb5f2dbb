@@ -1,0 +1,49 @@
+package com.aurionpro.game.test;
+
+import com.aurionpro.game.model.GameFacade;
+import com.aurionpro.game.model.Marker;
+
+public class GameFacadeTesting {
+public static void main(String[] args) {
+	
+	GameFacade remote= new GameFacade();
+	
+
+}
+}
+
+
+
+
+//System.out.println("Welcome to TicTacToe Game :");
+//for (int i = 1; i < 10; i++) {
+//	if (i % 2 != 0) {
+//		
+//		if(!player1.addValue())
+//		{
+//			i--;   
+//			board.display();
+//			continue;
+//		}
+//		board.display();
+//		
+//		if (board.checkWin())
+//			return;
+//	}
+//	if (i % 2 == 0) {
+//		if(!player2.addValue())
+//		{
+//		   i--;   
+//		   board.display();
+//		   continue;
+//		}
+//		board.display();
+//		
+//		if (board.checkWin())
+//			return;
+//	}
+//}
+//
+//if(!board.checkWin())
+//	System.out.println("Round draw ");
+//}

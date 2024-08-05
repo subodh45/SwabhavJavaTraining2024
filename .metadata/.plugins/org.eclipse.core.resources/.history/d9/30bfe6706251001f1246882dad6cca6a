@@ -1,0 +1,13 @@
+package com.aurionpro.game.model;
+
+public class Board {
+
+	String board[][];
+
+	public Board(String[][] board) {
+		super();
+		this.board = board;
+	}
+	
+	
+}

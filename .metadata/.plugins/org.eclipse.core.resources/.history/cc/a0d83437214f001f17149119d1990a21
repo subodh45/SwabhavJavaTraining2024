@@ -1,0 +1,11 @@
+package com.aurionpro.creational.factory.test;
+import com.aurionpro.creational.factory.model.*;
+
+public class ICarTest {
+public static void main(String[] args) {
+	
+	CarFactory car = new CarFactory();
+	car.MeakeCar("Mahindra");
+	
+}
+}

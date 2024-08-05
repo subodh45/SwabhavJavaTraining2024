@@ -1,0 +1,19 @@
+package com.aurionpro.game.model;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class Player1Test {
+
+	@Test
+	void testPlayer1() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testAddValue() {
+		fail("Not yet implemented");
+	}
+
+}

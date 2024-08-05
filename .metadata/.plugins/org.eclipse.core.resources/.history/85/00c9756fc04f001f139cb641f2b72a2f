@@ -1,0 +1,6 @@
+package com.aurionpro.creational.builder.model;
+
+public abstract class Company implements IPacking {
+ 
+	   public abstract int price();  
+}

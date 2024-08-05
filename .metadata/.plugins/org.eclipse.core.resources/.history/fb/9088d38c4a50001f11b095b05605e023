@@ -1,0 +1,16 @@
+package com.aurionpro.structural.proxy.test;
+import com.aurionpro.structural.proxy.model.*;
+
+public class ProxyTest {
+public static void main(String[] args) {
+	
+	Employee employee = new Employee();
+	IEmployee employeeProxy = new IEmployeeProxy();
+	
+	employeeProxy.create("User",employee );
+	employeeProxy.delete("Admin",1);
+	
+	
+	
+}
+}

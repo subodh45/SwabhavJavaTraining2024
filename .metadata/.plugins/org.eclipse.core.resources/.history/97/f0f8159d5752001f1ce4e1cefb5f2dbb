@@ -1,0 +1,9 @@
+package com.aurionpro.game.model;
+
+public class GameFacade extends Board {
+
+	public GameFacade(Marker[][] board) {
+		super(board);
+		// TODO Auto-generated constructor stub
+	}
+}

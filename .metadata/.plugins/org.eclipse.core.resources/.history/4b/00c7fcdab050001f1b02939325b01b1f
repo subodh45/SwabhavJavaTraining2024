@@ -1,0 +1,10 @@
+package com.aurionpro.behaviour.observer.test;
+import com.aurionpro.behaviour.observer.model.*;
+
+public class AccountNotifierTest {
+public static void main(String[] args) {
+	
+	
+	
+}
+}

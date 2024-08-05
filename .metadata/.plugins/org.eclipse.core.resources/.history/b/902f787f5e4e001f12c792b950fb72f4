@@ -1,0 +1,13 @@
+package com.aurionpro.violation.test;
+import com.aurionpro.violation.model.*;
+
+public class TAxCalculatorTest {
+public static void main(String[] args) {
+	
+	DBLoger dbloger = new DBLoger();
+	
+	TaxCalculator taxCalculator = new  TaxCalculator(dbloger);
+	taxCalculator.CaluclateTax(10000, 0);
+	
+}
+}

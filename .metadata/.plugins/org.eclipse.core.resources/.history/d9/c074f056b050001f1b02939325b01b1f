@@ -1,0 +1,5 @@
+package com.aurionpro.behaviour.observer.test;
+
+public class AccountNotifierTest {
+
+}

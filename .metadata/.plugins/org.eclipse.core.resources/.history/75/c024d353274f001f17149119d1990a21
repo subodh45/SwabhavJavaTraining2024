@@ -1,0 +1,13 @@
+package com.aurionpro.creational.factory.model;
+
+public class AccountFactory {
+
+	public IAccount createSavingAccount(int accountNumber,String name ,int balance ,int minBalance,Accounts AccountType)
+	{
+		IAccount account = new SavingAccount (int accountNumber,String name ,int balance ,int minBalance);	
+		return account;
+		
+	}
+}
+
+

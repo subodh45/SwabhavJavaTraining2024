@@ -1,0 +1,23 @@
+package com.aurionpro.game.model;
+
+import java.util.Scanner;
+
+public class Player1 extends Players{
+
+	Scanner scanner = new Scanner(System.in);
+	public Player1(Marker[][] board) {
+		super(board);
+		// TODO Auto-generated constructor stub
+	}
+	
+	public void putValue(int row, int column,Marker marker)
+	{
+		    System.out.println("Player1 ");
+			int row = getRow(scanner);
+			int column= getColumn(scanner);
+			player1.putValue(row, column, Marker.O );
+			board.display();
+	}
+
+
+}

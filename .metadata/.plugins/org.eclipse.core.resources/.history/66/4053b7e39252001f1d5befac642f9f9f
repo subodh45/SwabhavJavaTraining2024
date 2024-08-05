@@ -1,0 +1,5 @@
+package com.aurionpro.game.model;
+
+public class Board {
+
+}

@@ -1,0 +1,14 @@
+package com.aurionpro.behaviour.observer.model;
+
+public class EmailNotifier implements INotify {
+
+	@Override
+	public void notify(Account account,String operation) {
+		if(operation.equals("debit"))
+			System.out.println(" debit email message, new Balance is  "+ account.getBalance());
+			
+			System.out.println(" credit email message, new Balance is  "+ account.getBalance());
+	}
+
+	
+}

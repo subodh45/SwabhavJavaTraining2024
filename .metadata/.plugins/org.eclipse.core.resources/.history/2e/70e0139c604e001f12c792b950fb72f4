@@ -1,0 +1,15 @@
+package com.aurionpro.solution.test;
+import com.aurionpro.solution.model.*;
+
+public class TaxCalculatorTest {
+public static void main(String[] args) {
+	
+	DBLogger dbloger = new DBLogger();
+	
+	TaxCalculator taxCalculator = new  TaxCalculator(dbloger);
+	taxCalculator.CaluclateTax(10000, 0);
+
+	TaxCalculator taxCalculator2 = new  TaxCalculator(dbloger);
+	System.out.println(taxCalculator2.CaluclateTax(10000, 10));
+}
+}

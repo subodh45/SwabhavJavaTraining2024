@@ -1,0 +1,21 @@
+package com.aurionpro.model;
+
+import static org.junit.jupiter.api.Assertions.fail;
+
+import org.junit.jupiter.api.Test;
+
+public class AreaCaluculator {
+
+	
+	@Test
+	public void TestAreaOfCircle()
+	{
+		fail("impkementaio");
+	}
+	
+	public void TestAreaOfRectangle()
+	{
+		
+	}
+	
+}

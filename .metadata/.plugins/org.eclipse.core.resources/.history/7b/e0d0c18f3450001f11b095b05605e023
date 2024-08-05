@@ -1,0 +1,60 @@
+package com.aurionpro.structural.Facade.model2;
+
+public class HomeThreater implements IDVDPlayer ,IProjector,ISoundSystem {
+
+	public void DVDOn() {
+		// TODO Auto-generated method stub
+	   System.out.println("DVD on.");	
+	}	
+	public void DVDoff() {
+		// TODO Auto-generated method stub
+		System.out.println("DVD turn OFF");
+	}
+	@Override
+	public void DVDstart() {
+		// TODO Auto-generated method stub
+		System.out.println("DVD START");
+	}
+	
+	public void DVDstop() {
+		// TODO Auto-generated method stub
+		System.out.println("dvd stop");
+	}
+
+	public void ProjectorOn() {
+		// TODO Auto-generated method stub
+		System.out.println("Projector on.");
+	}
+
+	
+	public void ProjectorOff() {
+		// TODO Auto-generated method stub
+		System.out.println("projector off .");
+	}
+
+	@Override
+	public void ProjectorInput() {
+		// TODO Auto-generated method stub
+		System.out.println("Input found.");
+	}
+
+	@Override
+	public void SoundSystemStart() {
+		// TODO Auto-generated method stub
+		System.out.println("Sound System start");
+	}
+
+	@Override
+	public void SoundSystemStop() {
+		// TODO Auto-generated method stub
+		System.out.println("Sound System Stop.");
+	}
+
+	@Override
+	public void SoundSystemVolume(int level) {
+		// TODO Auto-generated method stub
+		System.out.println("Sound System updated  vloume is "+ level);
+	}
+
+	
+}

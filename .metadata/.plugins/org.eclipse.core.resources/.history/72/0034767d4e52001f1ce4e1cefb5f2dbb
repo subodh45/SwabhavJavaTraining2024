@@ -1,0 +1,23 @@
+package com.aurionpro.game.model;
+
+public class Player1 extends Players {
+
+	public Player1(Marker[][] board) {
+		super(board);
+		// TODO Auto-generated constructor stub
+	}
+
+	public boolean addValue() {
+		System.out.println("Player1 ");
+		int row = getRow(scanner);
+		int column = getColumn(scanner);
+		
+		if(row>=3 || column >= 3)
+		{
+			System.out.println("Please inter position as 0 ,1 or 2.");
+			return false;
+		}
+		return putValue(row, column, Marker.O);
+
+	}
+}

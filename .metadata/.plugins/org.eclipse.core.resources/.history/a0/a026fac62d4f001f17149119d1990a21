@@ -1,0 +1,8 @@
+package com.aurionpro.creational.abstractfactory.model;
+
+import com.aurionpro.creational.factory.model.Accounts;
+
+public interface IAccountFactory {
+
+	IAccount getAccount(int accountNumber,String name ,int balance ,int minBalance,Accounts AccountType);
+}

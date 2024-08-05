@@ -1,0 +1,15 @@
+package com.aurionpro.behaviour.observer.model;
+
+public class SMSNotifier implements INotify{
+
+	@Override
+	public void notify(Account account,String operation) {
+		if(operation.equals("deposit"))
+		System.out.println(" debit sms message, new Balance is  "+ account.getBalance());
+		
+		System.out.println(" credit sms message, new Balance is  "+ account.getBalance());
+	}
+
+	
+	
+}

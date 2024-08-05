@@ -1,0 +1,20 @@
+package com.aurionpro.behaviour.observer.test;
+import java.util.List;
+import java.util.Scanner;
+
+import com.aurionpro.behaviour.observer.model.*;
+
+public class AccountNotifierTest {
+public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	 List<INotify> notifiers = null ;
+	 
+	System.out.println("which notification you want ");
+	System.out.println("press 1 for SMS 2 for email 3 for whatsup.");
+	
+	
+	 
+	Account account = new Account(123,"subodh", 10000.0,notifiers);
+	
+}
+}

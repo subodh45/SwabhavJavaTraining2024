@@ -1,0 +1,23 @@
+package com.aurionpro.structural.proxy.model;
+
+import java.util.List;
+
+public class EmployeeTask implements IEmployee{
+	
+	List<Employee> employeeList;
+	
+	public void create(String role , Employee employee) {
+		// TODO Auto-generated method stub
+		System.out.println("Employee Created .");
+	}
+
+	@Override
+	public void delete(String role , int empId) {
+		// TODO Auto-generated method stub
+		System.out.println("Remove employee of id "+ empId);
+	}
+
+	
+	}
+
+

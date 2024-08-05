@@ -1,0 +1,11 @@
+package com.aurionpro.behaviour.observer.model;
+
+public class WssupNotifier implements INotify {
+
+	@Override
+	public void notify(Account account) {
+		
+		System.out.println("Wssup message " + account );
+	}
+
+}

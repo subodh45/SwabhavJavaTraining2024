@@ -1,0 +1,14 @@
+package com.aurionpro.ocp.solution.model;
+
+public class FixedDeposit {
+	
+	private int AccountNumber;
+	private String name;
+	private double principle;
+	private int duration;
+	private FestivalType festival;
+	
+	
+	
+
+}

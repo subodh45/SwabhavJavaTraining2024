@@ -1,0 +1,13 @@
+package com.aurionpro.behaviour.observer.model;
+
+public class InsufficientFundsException extends RuntimeException {
+
+	 private double balance;
+
+	
+	 
+	 public String toMessage()
+	 {
+		 return "Insufficient balance .";
+	 }
+}

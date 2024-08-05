@@ -1,0 +1,23 @@
+package com.aurionpro.game.test;
+import com.aurionpro.game.model.*;
+
+public class GameTesting {
+public static void main(String[] args) {
+	
+	Marker game[][]=new Marker[3][3];
+	Board board = new Board(game);
+	
+	Players player1 = new Players(game);
+	
+	player1.putValue(2, 1, Marker.O );
+	player1.putValue(1, 2, Marker.X );
+	player1.putValue(2, 0, Marker.O );
+	player1.putValue(2, 2, Marker.X );
+	player1.putValue(1, 1, Marker.O );
+	player1.putValue(1, 0, Marker.X );
+	player1.putValue(0, 1, Marker.O );
+	player1.putValue(0, 0, Marker.X );
+	player1.putValue(0, 2, Marker.O );
+	board.display();
+}
+}

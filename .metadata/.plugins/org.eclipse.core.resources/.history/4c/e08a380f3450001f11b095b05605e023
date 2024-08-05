@@ -1,0 +1,23 @@
+package com.aurionpro.structural.Facade.model2;
+
+public class DVDPlayer {
+
+	public boolean On(){
+		return true;
+	}
+	
+	public boolean off()
+	{
+		return false;
+	}
+	
+	public  boolean start()
+	{
+		return true;
+	}
+	
+	public boolean stop()
+	{
+		return false;
+	}
+}

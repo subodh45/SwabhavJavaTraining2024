@@ -1,0 +1,21 @@
+package com.Aurionpro.Test;
+
+public class Test {
+ public static void main(String[] args) {
+	
+	 try {
+	 int number1=Integer.parseInt(args[0]);
+	 int number2=Integer.parseInt(args[1]);
+	 	 
+		 double result =number1/number2;
+		 
+		 System.out.println("divison is "+ result);
+	 }
+	 
+	 finally {
+		 System.out.println("inside finally . closing activities.");
+	 }
+	 
+	 System.out.println("success.");
+}
+}

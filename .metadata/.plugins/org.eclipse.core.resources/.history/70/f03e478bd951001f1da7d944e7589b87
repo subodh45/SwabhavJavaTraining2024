@@ -1,0 +1,18 @@
+package com.aurionpro.game.model;
+
+public class Player1 extends Players {
+
+	public Player1(Marker[][] board) {
+		super(board);
+		// TODO Auto-generated constructor stub
+	}
+
+	public void addValue() {
+		System.out.println("Player1 ");
+		int row = getRow(scanner);
+		int column = getColumn(scanner);
+		putValue(row, column, Marker.O);
+		Board.display();
+
+	}
+}

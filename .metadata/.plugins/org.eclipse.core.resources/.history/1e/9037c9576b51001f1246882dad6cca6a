@@ -1,0 +1,13 @@
+package com.aurionpro.game.model;
+
+public class Board {
+
+	Marker board[][];
+
+	public Board(Marker[][] board) {
+		super();
+		this.board = board;
+	}
+	
+	
+}

@@ -1,0 +1,5 @@
+package com.aurionpro.mockito;
+
+public interface IStudentService {
+
+}

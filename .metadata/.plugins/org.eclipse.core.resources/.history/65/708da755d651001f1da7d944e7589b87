@@ -1,0 +1,45 @@
+package com.aurionpro.game.test;
+import java.util.Scanner;
+
+import com.aurionpro.game.model.*;
+
+public class GameTesting {
+public static void main(String[] args) {
+	Scanner scanner = new Scanner(System.in);
+	Marker game[][]= {{Marker._,Marker._,Marker._},{Marker._,Marker._,Marker._},{Marker._,Marker._,Marker._}} ;
+	Board board = new Board(game);
+	
+	Player1 player1 = new Player1(game);
+	Player2 player2 = new Player2(game);
+	
+	
+	for(int i=1;i<10; i++)
+	{
+		if(i%2!=0)
+		{  
+			player1.getPosition();
+			board.checkWin();    	
+		}
+        if(i%2==0) {
+        	player2.getPosition();
+        	board.checkWin();
+        }
+	}
+
+	System.out.println();
+	//we can access through board as well as throgh plater
+	//board.display();
+}
+
+//private static int getColumn(Scanner scanner) {
+//	System.out.println("enter column position ");
+//	return scanner.nextInt();
+//}
+//
+//private static int getRow(Scanner scanner) {
+//	System.out.println("enter row position ");
+//	return scanner.nextInt();
+//	}
+
+
+}

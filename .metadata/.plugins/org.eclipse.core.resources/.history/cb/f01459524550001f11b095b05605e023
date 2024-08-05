@@ -1,0 +1,33 @@
+package com.aurionpro.structural.proxy.model;
+
+public class IEmployeeProxy implements IEmployee{
+
+	EmployeeTask employee;
+	
+	
+	public IEmployeeProxy(EmployeeTask employee) {
+		super();
+		employee = new EmployeeTask();
+	}
+	
+	
+	public void create(String role , Employee employee) {
+		
+		if(role =="ADMIN")
+		   employee
+		
+	}
+
+	@Override
+	public void delete(String role , int empId) {
+		// TODO Auto-generated method stub
+		System.out.println("Remove employee of id "+ empId);
+	}
+
+	@Override
+	public Employee get(String role , int empId) {
+		System.out.println("fetching data ");
+		return new Employee();
+	}
+
+}

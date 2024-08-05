@@ -1,0 +1,77 @@
+package com.aurionpro.guitar.model;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+
+public class Inventory {
+	
+    private	List guitars;
+		
+	public Inventory() {
+		super();
+		guitars = new LinkedList<>();
+	}
+
+
+
+	public void addGuitar(String serialNumber ,double price,GuitarSpec spec)
+	{
+		guitars.add(new Guitar(serialNumber ,price,spec));
+		System.out.println("Guitar Added Successfully.");
+	}
+	
+	
+	public Guitar getGuitar(String serialNumber)
+	{
+		for(Iterator i = guitars.iterator(); i.hasNext(); )
+		{
+			Guitar guitar = (Guitar) i.next();
+			
+			if(guitar.getSerialNumber().equals(serialNumber))
+				return guitar;
+		}
+		return null;
+	}
+	
+	public List search(Guitar searchGuitar)
+	{  
+		List matchingGuitar = new LinkedList<>();
+		for(Iterator i =guitars.iterator() ; i.hasNext();)
+		{
+			Guitar guitar = (Guitar) i.next();
+			
+			//check builder
+			//String builder = searchGuitar.getBuilder();
+			if(searchGuitar.getBuilder() != guitar.getBuilder())
+				 continue;
+			
+			//check model
+			String model = searchGuitar.getModel().toLowerCase();
+			if(model != null && !model.equals("") && !model.equals(guitar.getModel().toLowerCase()))
+				 continue;
+			
+			//check type
+			//String type = searchGuitar.getType();
+			if(searchGuitar.getType() != guitar.getType())
+				 continue;
+			
+			//check backwood
+			//String backwood = searchGuitar.getBackWood();
+			if(searchGuitar.getBackWood() != guitar.getBackWood())
+				 continue;
+			
+			//check topwood
+			//String topwood = searchGuitar.getModel();
+			if(searchGuitar.getTopWood() != guitar.getTopWood())
+				 continue;
+			
+			matchingGuitar.add(guitar);
+		}
+		
+		return matchingGuitar;
+		
+	}
+
+}

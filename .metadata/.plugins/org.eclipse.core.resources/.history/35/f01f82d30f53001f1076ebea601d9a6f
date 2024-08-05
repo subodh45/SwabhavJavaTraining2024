@@ -1,0 +1,27 @@
+package com.aurionpro.mockito;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
+
+class StudentTest {
+
+	IStudentService studentService;
+	Student student;
+	@BeforeAll
+	void init()
+	{
+		studentService = Mockito.mock(IStudentService.class);
+		student = new Student(studentService);
+	}
+	
+
+	@Test
+	void testCalculatepercentage() {
+		fail("Not yet implemented");
+	}
+
+}

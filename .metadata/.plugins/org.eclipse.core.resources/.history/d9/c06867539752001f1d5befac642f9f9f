@@ -1,0 +1,25 @@
+package com.aurionpro.game.model;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+class Player1Test {
+
+	@BeforeEach
+	void setUp() throws Exception {
+	}
+
+	
+	void testPlayer1() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testAddValue() {
+       assertTrue(Player1);
+       assertTrue(Player1.putValue(0, 2, Marker.O));
+	}
+
+}

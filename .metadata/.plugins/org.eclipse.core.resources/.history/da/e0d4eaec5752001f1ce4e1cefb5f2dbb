@@ -1,0 +1,19 @@
+package com.aurionpro.game.model;
+
+import java.util.Scanner;
+
+public class GameFacade extends Board {
+
+	public GameFacade(Marker[][] board) {
+		super(board);
+		// TODO Auto-generated constructor stub
+	}
+	
+	Scanner scanner = new Scanner(System.in);
+	
+	
+	Board board = new Board(board);
+
+	Player1 player1 = new Player1(board);
+	Player2 player2 = new Player2(board);
+}

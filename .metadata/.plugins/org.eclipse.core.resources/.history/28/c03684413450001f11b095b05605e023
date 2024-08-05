@@ -1,0 +1,18 @@
+package com.aurionpro.structural.Facade.model2;
+
+public class Projector {
+
+	public boolean On(){
+		return true;
+	}
+	
+	public boolean off()
+	{
+		return false;
+	}
+	
+	public  String input()
+	{   
+		return "get input";
+	}
+}
