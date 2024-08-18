@@ -1,0 +1,25 @@
+body{
+    background-color:azure;
+}
+
+.navbar{
+    
+    background-color: cadetblue;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+    font-size: 40px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: black;
+    
+}

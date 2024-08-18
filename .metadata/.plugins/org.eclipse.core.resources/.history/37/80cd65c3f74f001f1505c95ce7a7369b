@@ -1,9 +1,0 @@
-package com.aurionpro.structural.decorators.test;
-import com.aurionpro.structural.decorators.model.*;
-
-public class CarServiceTest {
-public static void main(String[] args) {
-	
-	
-}
-}

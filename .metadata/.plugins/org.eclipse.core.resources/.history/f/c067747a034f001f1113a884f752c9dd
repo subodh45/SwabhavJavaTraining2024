@@ -1,5 +1,0 @@
-package com.aurionpro.guitar.model;
-
-public enum Builder {
-
-}

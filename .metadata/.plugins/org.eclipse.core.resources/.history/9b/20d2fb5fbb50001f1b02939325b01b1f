@@ -1,7 +1,0 @@
-package com.aurionpro.behaviour.state.model;
-
-public class IPacketState  {
-
-	next(Packet packet);
-	previous(Packet packet);
-}

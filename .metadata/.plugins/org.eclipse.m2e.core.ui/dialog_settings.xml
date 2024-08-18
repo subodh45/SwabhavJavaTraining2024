@@ -2,13 +2,18 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.aurionpro.model"/>
+			<item value="com.aurionpro.springboot"/>
 			<item value="com.aurionpro.mockito"/>
 			<item value="com.aurionpro.tictactoe"/>
 			<item value="com.aurionpro"/>
 		</list>
 		<list key="name">
+			<item value="spring configuration"/>
 		</list>
 		<list key="artifactId">
+			<item value="L30_SpringBoot_SpringAnnotation"/>
+			<item value="L29_SpringBoot_App"/>
 			<item value="L25_mockitoTesting"/>
 			<item value="Maven_tictactoe_game"/>
 			<item value="L24_Testing_JUNIT"/>

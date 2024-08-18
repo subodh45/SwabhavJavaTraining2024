@@ -1,9 +1,0 @@
-package com.aurionpro.structural.adapter.model1;
-
-public class HatAdapter implements IItems {
-
-	Hat hat;
-	
-	
-}
-

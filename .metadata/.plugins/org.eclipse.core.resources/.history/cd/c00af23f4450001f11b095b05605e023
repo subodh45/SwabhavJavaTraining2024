@@ -1,8 +1,0 @@
-package com.aurionpro.structural.proxy.model;
-
-public interface IEmployee {
-
-	void create(int id , String role);
-	void delete(int id , String role);
-	Employee get(int id );
-}

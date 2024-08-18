@@ -48,39 +48,19 @@ public class Account {
 		System.out.println("Amount Deposite Succefully. "+"\n"+"Updated balance is "+this.getBalance());
 	}
 		
-	public void deposit(double amount) {
-		try {
-			if(amount<=0)
-				throw new NegativeAmountException();
-		    this.setBalance(this.balance + amount);
-		    System.out.println("deposit added succefully.");
-		    System.out.println("updated balance is "+this.getBalance());
-		}
-		catch(NegativeAmountException exception)
-		{
-			System.out.println(exception.getMessage());
-		}
-	}
 	
 	public void withdraw(double amount) {
-		try {
+		
 			if(amount <=0)
-				throw new NegativeAmountException();
+				System.out.println("enter valid amount.");
 			if (this.getBalance() < amount)
 			{	
-				throw new InsufficientFundsException();
+				System.out.println("balance is less");;
 			}
 			this.setBalance(this.getBalance() - amount);
 
 			System.out.println("Amount withdraw Succefully .");
 			System.out.println("updated balance is " + this.getBalance());
-		} 
-		catch(InsufficientFundsException exception) {
-			System.out.println(exception.getMessage());
-		}
-		catch(NegativeAmountException exception)
-		{
-			System.out.println(exception.getMessage());
-		}
+		
 	}
 }
